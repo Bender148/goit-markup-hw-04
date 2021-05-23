@@ -240,7 +240,10 @@ img {
         rgba(47, 48, 58, 0.4),
         rgba(47, 48, 58, 0.4)
     ),
-    url(../images/background.jpg)
+    url(../images/background.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
 }
 
 .hero .container {
@@ -491,11 +494,19 @@ img {
     border: 2px solid var(--accent-color);
 }
 
+.client-link:focus {
+    border: 2px solid var(--accent-color);
+}
+
 .client-icon {
     fill: var(--icon-color);
 }
 
 .client-link:hover .client-icon {
+    fill: var(--accent-color);
+}
+
+.client-link:focus .client-icon {
     fill: var(--accent-color);
 }
 /*=========END-CLIENTS-LIST=========*/
